@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "start": "python3 -m http.server 5173",
+    "build": "python3 - <<'PY'\nfrom pathlib import Path\nassert Path('index.html').exists()\nassert Path('src/styles.css').exists()\nassert Path('src/calculator.js').exists()\nassert Path('src/analytics.js').exists()\nassert Path('assets/favicon.svg').exists()\nassert Path('assets/social-preview.svg').exists()\nassert Path('netlify.toml').exists()\nassert Path('netlify/functions/conversion.js').exists()\nprint('Static site build check passed')\nPY"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
